@@ -282,15 +282,18 @@ margin-right: 4rem;
 }
 
 .course{
-    background: var(--color-bg1);
+    background: var(--color-light);
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    border-radius: 20px;
 }
 
 .course:hover{
     background: transparent;
     border-color: var(--color-bg1);
+    box-shadow: 0 1px 8px rgb(3 0 71 / 9%);
+    transform: scale(1.02);
 }
 
 .course_info {
@@ -300,4 +303,8 @@ margin-right: 4rem;
 .course_info p{
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
+}
+.course_image>img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
