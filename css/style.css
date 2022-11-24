@@ -1,0 +1,303 @@
+/************************************\
+    # GENERAL
+\************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration:none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #f4a62a;;
+    --color-warning: #ffaa46;
+    --color-success: #00bf8e;
+    --color-info: #29baf9;
+    --color-danger: #e53f3c;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: #f5f4f8;
+    --color-black: #000;
+    --color-bg: #6c63ff;
+    --color-bg1: #e2e0ff;
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+
+}
+
+/* GOOGLE FONT FACE MONTSERAT */
+
+@font-face {
+    font-family: Montserrat-Bold ;
+    src: url(/ressources/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold ;
+    src: url(/ressources/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular ;
+    src: url(/ressources/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+body{
+    font-family: Montserrat-SemiBold ;
+    line-height: 1.7;
+    /* color: var(--color-white) ;*/
+    /*background-color: var(--color-bg); */
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+  
+    font-family: Montserrat-Bold ;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--color-black);
+}
+
+img{
+    width: 100% ;
+    display: block;
+    object-fit: cover;
+}
+
+
+.btn{
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-black);
+    border: 1px solid transparent;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-primary{
+    background: var(--color-primary);
+}
+
+
+/************************************\
+    # NAVBAR
+\************************************/
+
+/***/
+.logo{
+    width: 40%;
+}
+/***/
+
+nav{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
+    width: 100vw;
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+
+}
+
+/*Change navbar styles on scroll using javascript*/
+
+.window-scroll{
+    background: var(--color-bg1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+/* .window-scroll:hover a{
+    color: var(--color-white);
+} */
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_menu a{
+    font-size: 0.9rem;
+    transition: var(--transition) ;
+    
+}
+
+/* .nav_menu a:hover{
+    color: var(--color-primary);
+} */
+
+
+/************************************\
+    # HEADER
+\************************************/
+
+
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+
+}
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-area: 5rem;
+    height: 100%;
+}
+
+
+.header_left p{
+    margin: 1rem 0 2.4rem;
+
+}
+
+/************************************\
+    # CATEGORIES
+\************************************/
+
+.categories{
+    background:var(--color-bg1);
+
+    height: 29rem;
+}
+
+.categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+
+}
+
+.categories_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* gap: 4rem; */
+}
+
+.categories_left{
+margin-right: 4rem;
+}
+
+.categories_left p{
+    margin: 1rem 0 3rem;
+}
+
+.categories_right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.category{
+    background: #f4a62a;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.category:hover{
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+/************************************\
+    # POPULAR COURSES
+\************************************/
+
+.courses{
+    margin-top: 10rem;
+
+}
+
+.courses_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
+
+.course{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover{
+    background: transparent;
+    border-color: var(--color-bg1);
+}
+
+.course_info {
+    padding: 2rem;
+}
+
+.course_info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
