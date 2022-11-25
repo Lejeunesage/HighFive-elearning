@@ -27,7 +27,7 @@ faqs.forEach(faq => {
 
 /*Login form */
 
-/*
+
 const displayform = _('displayform');
 const forLogin = _('forLogin');
 const formLogin = _('formLogin');
@@ -68,8 +68,9 @@ function _(e) {
 }
 
 function showform() {
-    document.querySelector('.form-wrapper .card').classList.toggle('show')
-}*/
+    document.querySelector('.form').classList.toggle('active');
+    document.body.classList.toggle("active");
+}
 
 /*
 const OpenNav = document.querySelector(".icon1")
@@ -91,6 +92,7 @@ FermerNav.addEventListener("click", () =>{
         Menu.classList.remove("montrer")
     }
 })*/
+
 
 
 
