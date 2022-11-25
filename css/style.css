@@ -27,7 +27,7 @@
     --color-bg2: #424890;
 
     --container-width-lg: 76%;
-    --container-width-md: 90%;
+    --container-width-md: 78%;
     --container-width-sm: 94%;
 
     --transition: all 400ms ease;
@@ -59,7 +59,7 @@ body{
 }
 
 .container{
-    width: var(--container-width-lg);
+    width: var(--container-width-md);
     margin: 0 auto;
 }
 
@@ -131,6 +131,8 @@ img{
 }
 
 
+
+
 /************************************\
     # NAVBAR
 \************************************/
@@ -149,6 +151,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 11;
+    font-family: Montserrat-Bold ;
 
 }
 
@@ -165,13 +168,38 @@ nav{
 .nav_container{
     height: 100%;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content:space-between ;
     align-items: center;
 }
 
 nav button{
     display: none;
+    font-size: 25px;
+    background: none;
+}
+
+button.btn
+{
+    padding: 10px 20px;
+    font-size: .9rem;
+    font-family: Montserrat-Bold ;
+    /* font-weight: bold;
+    font-style: italic; */
+    margin-top: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 2px 3px 10px var(--color-bg1);
+    border-radius: 50px;
+    width:230px;
+}
+
+button.btn:hover
+{
+    border-color: var(--color-primary);
 }
 
 .nav_menu{
@@ -186,9 +214,160 @@ nav button{
     
 }
 
-/* .nav_menu a:hover{
+.nav_menu a:hover{
     color: var(--color-primary);
-} */
+    border-bottom: 1px solid var(--color-primary); 
+   
+}
+
+
+/************************************\
+    # LOGIN FORM
+\************************************/
+
+/*SECTION*/
+/*
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.form-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+.form-wrapper .card
+{
+    width: 360px;
+    padding: 20px;
+    background-color: rgb(0 0 0 /35%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    border-radius: 5px;
+}
+
+.card.show
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-header
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px 0 ;
+    font-size: 1.1rem;
+    color: #94f7e6;
+    box-shadow: 2px 3px 8px #d3f7ff71;
+    border-radius: 50px;
+   
+}
+
+.card-header .form-header
+{
+    flex: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card-header .form-header.active
+{
+    box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%), inset -1px 1px 2px rgb(19 210 177 / 55%), 
+                inset -1px -1px 2px rgb(19 210 177 / 55%),inset 1px -1px 2px rgb(19 210 177 / 55%);
+    border-color: #94f7e6;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.card-body
+{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
+}
+form
+{
+    flex: 0 0 100%;
+}
+
+.toggleform
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.form-control
+{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(134 255 249 /65%);
+    background: none;
+    outline: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor:ns-resize;
+}
+
+.form-control::placeholder
+{
+    color: rgb(134 255 240 /65%);
+}
+
+.formbutton
+{
+    border: 1px solid transparent;
+    padding: 1rem 1rem;
+    width: 10rem;
+    background-color: #94f7e6;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.formbutton:hover
+{
+    box-shadow: 3px 5px 15px #94f7e6;
+    transform: translateY(-5px);
+}
+
+
+@media  (max-width:1080px) {
+    
+
+   .nav_list
+    {
+        align-items:baseline;
+        display: inline-block;
+    }
+    nav ul li a:hover
+    {
+        border-bottom: none;
+        justify-content: first baseline;
+        display: block;
+        color: #d3f7ff71;
+    }
+    
+}
+
+*/
 
 
 /************************************\
@@ -266,6 +445,10 @@ margin-right: 4rem;
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
+.category_icon i{
+    font-size: 25px;
+}
+
 /************************************\
     # POPULAR COURSES
 \************************************/
@@ -307,4 +490,102 @@ margin-right: 4rem;
 .course_image>img{
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+/************************************\
+    # FAQS
+\************************************/
+
+.faqs{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+
+}
+
+.faqs_container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq_icon{
+    align-self: flex-start;
+
+}
+
+.faq p{
+    margin-top: .8rem;
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+}
+
+/************************************\
+    # FAQS
+\************************************/
+
+.testimonial_container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial{
+    padding-top: 2rem;
+}
+
+.avatar{
+    width: 6rem ;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem ;
+    border: 1rem solid var(--color-primary);
+}
+
+.testimonial_info{
+    text-align: center;
+}
+
+.testimonial_body{
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position:relative;
+}
+
+.testimonial_body::before{
+    content: '';
+    display: block;
+    background: linear-gradient(
+        135deg,
+        transparent,
+        var(--color-primary),
+        var(--color-primary),
+        var(--color-primary)
+    );
+    width: 3rem;
+    height: 6rem;
+    position: absolute;
+    left: 50%;
+    top: -1.8rem;
+    transform: rotate(45deg);
 }
