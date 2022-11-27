@@ -135,12 +135,20 @@ img{
     background: var(--color-primary);
 }
 
+<<<<<<< HEAD
 /* :focus-visible { outline-offset: 4px; }
+=======
+:focus-visible { outline-offset: 4px; }
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
 
 ::selection {
   background-color: var(--color-primary);
   color: var(--white);
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
 
 ::-webkit-scrollbar { width: 10px; }
 
@@ -151,7 +159,11 @@ img{
   border-radius: 50px;
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar-thumb:hover { background-color: var(--color-primary); }
+=======
+::-webkit-scrollbar-thumb:hover { background-color: var(--color-warning); }
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
 
 
 
@@ -250,12 +262,20 @@ button.btn:hover
 
 /*SECTION*/
 
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
 .form
 {
     margin: 50px 0;
     position: absolute;
+<<<<<<< HEAD
     top: 0px;
+=======
+    top: -2000px;
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
     left: 0;
     width: 100%;
     height: 100vh;
@@ -321,9 +341,15 @@ form
 
 .card-header .form-header.active
 {
+<<<<<<< HEAD
     box-shadow: inset 1px 1px 2px var(--color-primary), inset -1px 1px 2px var(--color-primary), 
                 inset -1px -1px 2px var(--color-primary),inset 1px -1px 2px var(--color-primary);
     border-color: var(--color-primary);
+=======
+    box-shadow: inset 1px 1px 2px var(--color-warning), inset -1px 1px 2px var(--color-warning), 
+                inset -1px -1px 2px var(--color-warning),inset 1px -1px 2px var(--color-warning);
+    border-color: var(--color-warning);
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -347,7 +373,11 @@ form
 {
     width: 100%;
     border: none;
+<<<<<<< HEAD
     border-bottom: 1px solid var(--color-primary);
+=======
+    border-bottom: 1px solid var(--color-warning);
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
     background: none;
     outline: none;
     padding: 10px 5px;
@@ -360,7 +390,11 @@ form
     border: 1px solid transparent;
     padding: .8rem 1rem;
     width: 10rem;
+<<<<<<< HEAD
     background-color: var(--color-primary);
+=======
+    background-color: var(--color-warning);
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
     border-radius: 50px;
     margin-top: 1rem;
     font-size: 1rem;
@@ -369,9 +403,15 @@ form
 
 .formbutton:hover
 {
+<<<<<<< HEAD
     color: var(--color-primary);
     background: none;
     border: 1px solid var(--color-primary);
+=======
+    color: var(--color-warning);
+    background: none;
+    border: 1px solid var(--color-warning);
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
 }
 
 
@@ -395,7 +435,11 @@ form
 
 
 
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0
 /*
 
 
@@ -619,6 +663,7 @@ margin-right: 4rem;
     width: 6rem;
     height: 6rem;
     position: absolute;
+<<<<<<< HEAD
     left: 40%;
     top: -1.5rem;
     transform: rotate(45deg);
@@ -952,3 +997,10 @@ footer ul li a:hover{
         bottom: -10px;
     }
 }
+=======
+    left: 46.8%;
+    top: -1.8rem;
+    transform: rotate(45deg);
+    z-index: -100;
+}
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0

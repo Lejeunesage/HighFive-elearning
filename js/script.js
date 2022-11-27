@@ -96,6 +96,7 @@ FermerNav.addEventListener("click", () =>{
 
 
 
+<<<<<<< HEAD
 /*SWIPERJS TESTIMONIAL */
 /*
 var swiper = new Swiper(".mySwiper", {
@@ -142,3 +143,5 @@ var swiper = new Swiper(".mySwiper", {
 
     
 */
+=======
+>>>>>>> 80ffd0c542f2b6d8a5d515ce80278713d263c6d0

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teroc.digital</title>
+
+    <!--CSS stylesheet link  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+   
+</head>
+<body>
+    <!-- Start of Navbar -->
+    <nav>
+        <div class="container nav_container">
+            <a  href="index.html"><h1>Teroc<span style="color:#f4a62a;">.digital</span></h1></a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="about.html">A-propos</a></li>
+                <li><a href="courses.html">Cours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <button class="btn" id="displayform" class="nav-link">Se Connecter / S'inscrire</button>
+                </li>
+            </ul>
+            <button>
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+
+
+    <!-- LOGIN FORM -->
+    
+       
+        <section class="form">
+            <div class="sec-container">
+                <div class="form-wrapper">
+                    <div class="card">
+                        <div class="card-header">
+                            <div id="forLogin" class="form-header active">Se Connerter</div>
+                            <div id="forRegister" class="form-header">S'inscrire</div>
+                        </div>
+
+                        <div class="card-body" id="formContainer">
+                            <form id="formLogin">
+                                <input type="text" class="form-control" placeholder="@Utilisateur">
+                                <input type="password" class="form-control" placeholder="@Mot de passe">
+                                <button class="formbutton">Connexion</button>
+                            </form>
+                            <form id="formRegister" class="toggleform">
+                                <input type="text" class="form-control" placeholder="@Utilisateur">
+                                <input type="password" class="form-control" placeholder="@Mot de passe">
+                                <input type="password" class="form-control" placeholder="@Confirmer mot de passe">
+                                <input  class="formbutton" type="submit" value="Inscription">
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+
+
+    <!-- Start of Header -->
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Développer vos compétences pour faire avancer votre carrière</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam velit porro, amet quia beatae veritatis nihil et omnis esse, voluptatum libero illo praesentium! 
+                </p>
+                <a href="courses.html" class="btn btn-primary">Commencer</a>
+            </div>
+            <div class="header_right">
+                <img src="./ressources/images/header.svg" alt="header)image">
+            </div>
+        </div>
+
+    </header>
+    <!-- End of Header -->
+
+    <!-- SECTION CATEGORIES -->
+
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1>Catégories</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam cum temporibus numquam at perspiciatis minus fugiat eligendi nihil esse voluptates labore voluptatibus nostrum? In dolores ratione nemo quas ipsam?
+                </p>
+                <a href="a" class="btn btn-primary ">En savoir plus</a>
+            </div>
+            <div class="categories_right">
+                <article class="category">
+                    <span class= "category_icon">
+                        <i class="fa-solid fa-code"></i>
+                    </span>
+                    <h4>Intégration Web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                </article>
+                <article class="category">
+                    <span class= "category_icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </span>
+                    <h4>Develop-<span>pement Web</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                </article>
+                <article class="category">
+                    <span class= "category_icon">
+                        <i class="fa-brands fa-phoenix-framework"></i>
+                    </span>
+                    <h4>Framework</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                </article>
+                <article class="category">
+                    <span class= "category_icon">
+                        <i class="fa-brands fa-wordpress"></i>
+                    </span>
+                    <h4>CMS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                </article>
+                <article class="category">
+                    <span class= "category_icon">
+                        <i class="fa-solid fa-database"></i>
+                    </span>
+                    <h4>Base de donnée</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                </article>
+                <article class="category">
+                    <span class= "category_icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </span>
+                    <h4>Design UI/UX</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- SECTION COURS POPULAIRES -->
+
+    <section class="courses">
+        <h2>Nos cours Popolaires</h2>
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_image">
+                    <img src="./ressources/images/htmlAI.jpg" alt="">
+                </div>
+                <div class="course_info">
+                    <h4>HTML</h4>
+                    <p>
+                        Dans ce cours vous allez apprendre les bases du HTML
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./ressources/images/cssAI.jpg" alt="">
+                </div>
+               <div class="course_info">
+                    <h4>CSS</h4>
+                    <p>
+                        Dans ce cours vous allez apprendre les bases du CSS
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">En savoir plus</a>
+               </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./ressources/images/javascriptAI.jpg" alt="">
+                </div>
+                <div class="course_info">
+                    <h4>JAVASCRIPT</h4>
+                    <p>
+                        Dans ce cours vous allez apprendre les bases du JavaScript
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">En  savoir plus</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECTION FAQ -->
+
+    <section class="faqs">
+        <h2>
+            Questions fréquemment posées
+        </h2>
+        <div class="container faqs_container ">
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_answer">
+                    <h4>
+                        Comment puis-je connaître les bons cours pour moi?
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo consequuntur, nihil doloremque dolores quam tempora vero autem fugit reiciendis nulla esse dolore, exercitationem quisquam molestias magnam asperiores ad nesciunt.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="container testimonials_container">
+        <h2>Témoignages des étudiants </h2>
+        <div>
+            <article class="testimonial">
+                <div class="avatar">
+                    <img src="./ressources/images/avatar1.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Etudiante</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quidem consectetur non officiis. Fuga expedita laboriosam est consequatur eum exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <div class="avatar">
+                    <img src="./ressources/images/avatar2.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ernest Kodjo</h5>
+                    <small>Developpeur Web</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quidem consectetur non officiis. Fuga expedita laboriosam est consequatur eum exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <div class="avatar">
+                    <img src="./ressources/images/avatar3.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Edem GNANBODE</h5>
+                    <small>Etudiant</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quidem consectetur non officiis. Fuga expedita laboriosam est consequatur eum exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <div class="avatar">
+                    <img src="./ressources/images/avatar4.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Nadia BINTOU</h5>
+                    <small>Etudiante</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quidem consectetur non officiis. Fuga expedita laboriosam est consequatur eum exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <div class="avatar">
+                    <img src="./ressources/images/avatar5.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Emma DOSSOU</h5>
+                    <small>Etudiante</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quidem consectetur non officiis. Fuga expedita laboriosam est consequatur eum exercitationem!
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+     <!-- CDN font Awesome  link-->
+     <script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
+
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
