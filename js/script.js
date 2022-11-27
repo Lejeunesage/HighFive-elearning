@@ -5,7 +5,7 @@ window.addEventListener('scroll', ()=> {
 })
 
 /* Show / hide FAQS answers*/
-
+/*
 const faqs = document.querySelectorAll('.faq');
 faqs.forEach(faq => {
     faq.addEventListener('click', () => {
@@ -24,10 +24,10 @@ faqs.forEach(faq => {
     })
 })
 
-
+*/
 /*Login form */
 
-/*
+
 const displayform = _('displayform');
 const forLogin = _('forLogin');
 const formLogin = _('formLogin');
@@ -68,8 +68,9 @@ function _(e) {
 }
 
 function showform() {
-    document.querySelector('.form-wrapper .card').classList.toggle('show')
-}*/
+    document.querySelector('.form').classList.toggle('active');
+    document.body.classList.toggle("active");
+}
 
 /*
 const OpenNav = document.querySelector(".icon1")
@@ -94,3 +95,50 @@ FermerNav.addEventListener("click", () =>{
 
 
 
+
+/*SWIPERJS TESTIMONIAL */
+/*
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    //When window width is => 600px
+
+    breapoints: {
+        600:{
+            slidesPerView: 2
+        }
+    }
+  });
+  */
+
+
+
+  /*show/hide nav menu */
+/*
+  const menu = document.querySelector('.nav_menu');
+  const menuBtn = document.querySelector('#open-menu-btn');
+  const closeBtn = document.querySelector('#close-menu-btn');
+
+
+  const openNav = ()=> {
+      menu.style.display = 'flex';
+      closeBtn.style.display = 'inline-block';
+      menuBtn.style.display = 'none';
+  }
+
+  const closeNav = ()=> {
+    menu.style.display = 'none';
+    closeBtn.style.display = 'none';
+    menuBtn.style.display = 'inline-block';
+  }
+  
+  menuBtn.addEventListener('click',openNav );
+  closeBtn.addEventListener('click', closeNav);
+
+    
+*/
