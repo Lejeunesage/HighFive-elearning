@@ -103,7 +103,7 @@ form
     outline: none;
     padding: 10px 5px;
     margin-bottom: 20px;
-    color: #fff;
+    font-size: 1rem;
     cursor:ns-resize;
 }
 
@@ -159,7 +159,10 @@ form
 
 require "navbar.php";
 ?>
+
+
 <!-- LOGIN FORM -->
+<form action="" method="post"></form>
 <section>
             <div class="sec-container">
                 <div class="form-wrapper">
@@ -170,15 +173,17 @@ require "navbar.php";
                         </div>
 
                         <div class="card-body" id="formContainer">
-                            <form id="formLogin">
+                            <form action="" method="post" id="formLogin">
                                 <input type="text" class="form-control" placeholder="@Utilisateur">
                                 <input type="password" class="form-control" placeholder="@Mot de passe">
                                 <button class="formbutton">Connexion</button>
                             </form>
-                            <form id="formRegister" class="toggleform">
-                                <input type="text" class="form-control" placeholder="@Utilisateur">
-                                <input type="password" class="form-control" placeholder="@Mot de passe">
-                                <input type="password" class="form-control" placeholder="@Confirmer mot de passe">
+
+                            <form action="./sign-in-up.php" method="post" id="formRegister" class="toggleform">
+                                <input type="text"  name="fname" class="form-control" placeholder="@Prénom">
+                                <input type="text" name="lname" class="form-control" placeholder="@Nom">
+                                <input type="email"  name="email" class="form-control" placeholder="@Email">
+                                <input type="password"  name="pwd" class="form-control" placeholder="@Mot de passe">
                                 <input  class="formbutton" type="submit" value="Inscription">
                                 
                             </form>
@@ -187,6 +192,54 @@ require "navbar.php";
                 </div>
             </div>
         </section>
+
+
+        <?php
+    
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "teroc";
+    $dsn = "mysql:host=$servername;dbname=$dbname";
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+      }
+
+    if ($_SERVER["REQUEST_METHOD"]=="POST") {
+        $lname = test_input($_POST["lname"]);
+        $fname = test_input($_POST["fname"]);
+        $email = test_input($_POST["email"]);
+        $pwd =  test_input($_POST["pwd"]);
+    }
+    
+    try {
+      $conn = new PDO($dsn, $username, $password);
+      // set the PDO error mode to exception
+      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    $sql = "INSERT INTO users (lastname, firstname, email, mypassword) VALUES (:lname, :fname, :email, :pwd);";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([
+        ":lname" => $lname, 
+        ":fname" => $fname, 
+        ":email" => $email, 
+        ":pwd" => password_hash($pwd, PASSWORD_DEFAULT)
+    ]);
+    
+    //   header('Location:./index.php');
+    header('Location: http://www.google.com/');
+    } catch(PDOException $e) {
+      echo $sql . "<br>" . $e->getMessage();
+    }
+    
+    $conn = null;
+    
+
+?>
 
 
 
